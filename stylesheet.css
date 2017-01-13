@@ -1,0 +1,50 @@
+html{
+	margin: 0 auto;
+	padding:0px;
+	background-color:#75B4FF;
+	font-size:30px;
+	text-align:center;
+    border: 30px solid white;
+    padding: 40px; 
+	color:white;
+	font-family: 'Neuton', serif;
+
+}
+div{
+	display: inline-block;
+	
+}
+div.main{
+	border-radius: 1em;
+	padding: 1em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+	
+}
+table {
+    border-collapse: collapse;
+	padding:20px;
+}
+td{
+	border-radius: 25px;
+    border: 5px solid #75B4FF;
+    padding: 5px; 
+	
+	font-size:30px;
+	text-align:center;
+	font-style:color=white;
+
+}
+td.cap{
+	
+	background-color:rgba(0, 0, 0, 0.1);
+}
+select{
+	font-size:24px;
+}
+
+
+
