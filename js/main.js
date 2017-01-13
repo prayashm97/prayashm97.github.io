@@ -25,7 +25,7 @@ $(document).ready(function () {
 		error: function(jqXHR, textStatus, errorThrown) {
 			console.log(textStatus, errorThrown);
 		},
-		
+		async: false,
 
 	});
 
@@ -66,7 +66,7 @@ options.change(function() {
 		error: function(jqXHR, textStatus, errorThrown) {
 			console.log(textStatus, errorThrown);
 		},
-		
+		async: false,
 	});
 	
 	//fill table with values
