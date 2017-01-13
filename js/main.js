@@ -14,7 +14,6 @@ $(document).ready(function () {
 		success: function(data) {
 			//console.log(data[0].name); //gets Afghanistan
 			options.prepend("<option value='' selected='selected'></option>");
-			console.log(data[0].name); 
 
 			//append name and alphacode to countryBox select box
 			$.each(data, function() {
@@ -24,9 +23,8 @@ $(document).ready(function () {
 		},
 		//if not possible
 		error: function(jqXHR, textStatus, errorThrown) {
-			console.log("didnt work");
 			console.log(textStatus, errorThrown);
-		}
+		},
 		
 
 	});
@@ -67,7 +65,7 @@ options.change(function() {
 		},
 		error: function(jqXHR, textStatus, errorThrown) {
 			console.log(textStatus, errorThrown);
-		}
+		},
 		
 	});
 	
