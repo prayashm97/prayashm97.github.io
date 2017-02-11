@@ -1,0 +1,96 @@
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+    font-family: 'Neuton', sans-serif;
+    font-weight: 100;
+    font-size: 22;
+}
+
+.nav{
+    position: relative;
+    margin: 0 auto;  
+}
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 2em;
+    text-align: center;
+    transition: all .2s;
+    &:last-child {
+      padding-right: 0;
+    }
+}
+.nav ul li a {
+    display: block;
+    color: 56616d;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    background-color: #56616d;
+    color: EEEEEE;
+}
+
+section{
+    position: relative;
+    margin: 0 -9999rem;
+    padding: 5.25rem 9999rem;
+     border-style: solid;
+    border-width: 2px;
+    text-align: center;
+
+}
+
+#welcomeSection{
+    font-size: 5vh;
+    background-color: #EEEEEE;
+    color: #56616d;
+
+/*    color: #EC644B;*/
+
+}
+
+#aboutSection{
+    background-color: #EEEEEE;
+            color: #56616d;
+
+/*    color: #3ca8bc;*/
+
+}
+
+#aboutSection p, #skillsSection p, #experienceSection p{
+    padding: 0 120px;
+    text-align: left
+}
+
+#skillsSection{
+    background-color: #EEEEEE;
+            color: #56616d;
+
+/*        color: #6e9bef;*/
+
+}
+
+#experienceSection{
+    background-color: #EEEEEE;
+            color: #56616d;
+
+/*        color: #6d68f1;*/
+
+}
+#contact{
+    background-color: #EEEEEE;
+        color: #56616d;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
