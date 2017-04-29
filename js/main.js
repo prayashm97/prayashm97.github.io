@@ -7,9 +7,11 @@ map=new google.maps.Map(document.getElementById("googleMap"),{
 });
 
 
-var poly1First = new google.maps.LatLng(58.983991,5.734863);
-var poly1Second = new google.maps.LatLng(52.395715,4.888916);
-var poly1Third = new google.maps.LatLng(51.508742,-0.120850);
+
+
+var poly1First = new google.maps.LatLng(59.05792 ,-138.11682);
+var poly1Second = new google.maps.LatLng(60.67318,-138.66943);
+var poly1Third = new google.maps.LatLng(61.43457,-141.12158);
 
 poly1 = new google.maps.Polygon({
     path: [poly1First, poly1Second, poly1Third],
