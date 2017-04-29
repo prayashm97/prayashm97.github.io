@@ -7,18 +7,13 @@ map=new google.maps.Map(document.getElementById("googleMap"),{
 });
 
 
--144.46691 60.47658
--138.11682 59.05792
--138.66943 60.67318
--141.12158 61.43457
-
 var poly1First = new google.maps.LatLng(60.47658 ,-144.46691);
 var poly1Second = new google.maps.LatLng(59.05792,-138.11682);
 var poly1Third = new google.maps.LatLng(60.67318,-138.66943);
 var poly1Forth = new google.maps.LatLng(61.43457,-141.12158);
 
 poly1 = new google.maps.Polygon({
-    path: [poly1First, poly1Second, poly1Third],
+    path: [poly1First, poly1Second, poly1Third,poly1Forth],
     strokeColor: "#0000FF",
     strokeOpacity: 0.8,
     strokeWeight: 2,
