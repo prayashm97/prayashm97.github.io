@@ -39,12 +39,15 @@ function myMap() {
         fillOpacity: 0.4
     });
 
-    var poly3First = new google.maps.LatLng(20.983991,-3.734863);
-    var poly3Second = new google.maps.LatLng(89.395715,-12.888916);
-    var poly3Third = new google.maps.LatLng(36.508742,-21.120850);
+
+    var poly3First = new google.maps.LatLng(52.38365 ,-118.59961);
+    var poly3Second = new google.maps.LatLng(52.38365 ,-115.92773);
+
+    var poly3Third = new google.maps.LatLng(51.50874,-115.92773);
+    var poly3Fourth = new google.maps.LatLng(51.50874,-118.59961);
 
     poly3 = new google.maps.Polygon({
-        path: [poly3First, poly3Second, poly3Third],
+        path: [poly3First, poly3Second,poly3Third,poly3Fourth],
         strokeColor: "#FFFFFF",
         strokeOpacity: 0.8,
         strokeWeight: 2,
@@ -192,6 +195,8 @@ function cClicked ()
     giflink = "gifs/c.gif";
 
     changebottom(des, imglink, glink, giflink);
+    polygon3();
+
 }
 
 
