@@ -1,22 +1,5 @@
 var map, heatMap;
 
-$.getJSON( "ajax/testfile.json", function( data ) {
-  // var items = [];
-  // $.each( data, function( key, val ) {
-  //   items.push( "<li id='" + key + "'>" + val + "</li>" );
-  // });
-  //
-  // $( "<ul/>", {
-  //   "class": "my-new-list",
-  //   html: items.join( "" )
-  // }).appendTo( "body" );
-  console.log(data);
-});
-
-
-
-
-
 function myMap() {
 
     map=new google.maps.Map(document.getElementById("googleMap"),{
@@ -95,7 +78,8 @@ function myMap() {
 
     heatmap = new google.maps.visualization.HeatmapLayer({
           data: getPoints(),
-          map: map
+          map: map,
+          opacity:0.6,
     });
 
     // heatmap = new google.maps.visualization.HeatmapLayer({
@@ -104,23 +88,46 @@ function myMap() {
     //     });
     //
     function getPoints() {
+        var returnVal = [];
 
-        return [
-            {location: new google.maps.LatLng(59.18855775, -139.1109965), weight: 406.40056},
-            {location: new google.maps.LatLng(37.782745, -143.067291), weight: 401.94589},
+        $.getJSON( "https://prayashm97.github.io/js/ajax/testfile.json", function( data ) {
+          // var items = [];
+          $.each( data, function( key, val ) {
+            //   console.log(val.CO2);
+              x = {
+                  'location':new google.maps.LatLng(val.Latitude,val.Longitude), 'weight': (((val.CO2)-371)/16)
+              }
 
+              returnVal.push(x)
+            // if (key=='CO2') {
+            //     console.log(val);
+            // }
+          });
 
-            // new google.maps.LatLng(37.782842, -141.5186615),
-            // new google.maps.LatLng(37.782919, -140.797081),
-            // new google.maps.LatLng(37.782551, -139.3942891),
-            // new google.maps.LatLng(37.782745, -142.102875),
-            // new google.maps.LatLng(37.782842, -141.901474),
-            // new google.maps.LatLng(37.782919, -141.4965037),
-            // new google.maps.LatLng(37.782551, -139.0795774),
-            // new google.maps.LatLng(37.782745, -142.642166),
-            // new google.maps.LatLng(37.782842, -141.9782028),
-            // new google.maps.LatLng(37.782919, -141.8092487)
-        ];
+          //
+          // $( "<ul/>", {
+          //   "class": "my-new-list",
+          //   html: items.join( "" )
+          // }).appendTo( "body" );
+        });
+        return(returnVal);
+
+        // return [
+        //     {location: new google.maps.LatLng(59.18855775, -139.1109965), weight: 406.40056},
+        //     {location: new google.maps.LatLng(37.782745, -143.067291), weight: 401.94589},
+        //
+        //
+        //     // new google.maps.LatLng(37.782842, -141.5186615),
+        //     // new google.maps.LatLng(37.782919, -140.797081),
+        //     // new google.maps.LatLng(37.782551, -139.3942891),
+        //     // new google.maps.LatLng(37.782745, -142.102875),
+        //     // new google.maps.LatLng(37.782842, -141.901474),
+        //     // new google.maps.LatLng(37.782919, -141.4965037),
+        //     // new google.maps.LatLng(37.782551, -139.0795774),
+        //     // new google.maps.LatLng(37.782745, -142.642166),
+        //     // new google.maps.LatLng(37.782842, -141.9782028),
+        //     // new google.maps.LatLng(37.782919, -141.8092487)
+        // ];
     };
 }
 
