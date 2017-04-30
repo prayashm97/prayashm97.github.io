@@ -9,6 +9,21 @@ function myMap() {
 
     });
 
+    // Create a <script> tag and set the USGS URL as the source.
+    var script = document.createElement('script');
+
+    // This example uses a local copy of the GeoJSON stored at
+    // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+    script.src = 'https://prayashm97.github.io/js/ajax/Hubbard.js';
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+    map.data.setStyle(function(feature) {
+      var magnitude = feature.getProperty('CO2');
+      return {
+        icon: getCircle(magnitude)
+      };
+    });
+
     var poly1First = new google.maps.LatLng(60.47658 ,-144.46691);
     var poly1Second = new google.maps.LatLng(59.05792,-138.11682);
     var poly1Third = new google.maps.LatLng(60.67318,-138.66943);
@@ -76,11 +91,11 @@ function myMap() {
     });
 
 
-    heatmap = new google.maps.visualization.HeatmapLayer({
-          data: getPoints(),
-          map: map,
-          opacity:0.6,
-    });
+    // heatmap = new google.maps.visualization.HeatmapLayer({
+    //       data: getPoints(),
+    //       map: map,
+    //       opacity:0.6,
+    // });
 
     // heatmap = new google.maps.visualization.HeatmapLayer({
     //       data: getPoints(),
@@ -99,38 +114,27 @@ function myMap() {
               }
 
               returnVal.push(x)
-            // if (key=='CO2') {
-            //     console.log(val);
-            // }
           });
-
-          //
-          // $( "<ul/>", {
-          //   "class": "my-new-list",
-          //   html: items.join( "" )
-          // }).appendTo( "body" );
         });
         return(returnVal);
-
-        // return [
-        //     {location: new google.maps.LatLng(59.18855775, -139.1109965), weight: 406.40056},
-        //     {location: new google.maps.LatLng(37.782745, -143.067291), weight: 401.94589},
-        //
-        //
-        //     // new google.maps.LatLng(37.782842, -141.5186615),
-        //     // new google.maps.LatLng(37.782919, -140.797081),
-        //     // new google.maps.LatLng(37.782551, -139.3942891),
-        //     // new google.maps.LatLng(37.782745, -142.102875),
-        //     // new google.maps.LatLng(37.782842, -141.901474),
-        //     // new google.maps.LatLng(37.782919, -141.4965037),
-        //     // new google.maps.LatLng(37.782551, -139.0795774),
-        //     // new google.maps.LatLng(37.782745, -142.642166),
-        //     // new google.maps.LatLng(37.782842, -141.9782028),
-        //     // new google.maps.LatLng(37.782919, -141.8092487)
-        // ];
     };
 }
 
+function getCircle(mag) {
+
+    return {
+          path: google.maps.SymbolPath.CIRCLE,
+          fillColor: 'red',
+          fillOpacity: .2,
+          scale: Math.pow(2, mag) / 2,
+          strokeColor: 'white',
+          strokeWeight: .5
+        };
+
+}
+function eqfeed_callback(results) {
+        map.data.addGeoJson(results);
+      }
 function polygon5() {
     poly2.setMap(null);
     poly1.setMap(null);
