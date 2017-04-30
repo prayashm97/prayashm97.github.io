@@ -1,22 +1,33 @@
 <html>
     <head>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 		<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet"  type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
 		<title>Earth Go Hard</title>
 
 	</head>
     <body>
 		<div class="main">
             <div class='Header'>
-                EARTH GO HARD!
+                <h1>EARTH GO HARD!</h1>
             </div>
-            <table>
-                <tr>
-                    <td>
-
-                        <div class="Buttons" valign="bottom">
-                            <button type="button" onclick="polygon1()">Click Me!</button>
+            
+                
+                <div class="row" style="border:0px solid blue; text-align: center; padding: 0px;">
+                
+                    <div class="col-lg-3" style="border: 0px solid red; padding: 0px; cursor: pointer; overflow:scroll; height:500px;">
+                        
+                        <div style="border: 0px solid blue; padding-top: 10px; padding-bottom: 10px; margin: 2px; background-color: #e6ffff; ">
+                            <div class="col-lg-10"></div>
+                            <h4>Hubbard Glacier | A</h4>
+                            <div><em>Show C02 levels</em></div>
+                        </div>
+                        <div style="border: 0px solid blue; padding-top: 10px; padding-bottom: 10px; margin: 2px; background-color: #e6ffe6;">
+                            <div class="col-lg-10"></div>
+                            <h4>Barnes Ice Cap | B</h4>
+                             <div><em>Show C02 levels</em></div>
                         </div>
                         <div class="Buttons" valign="bottom">
                             <button type="button" onclick="polygon2()">Click Me!</button>
@@ -30,17 +41,63 @@
                         <div class="Buttons" valign="bottom">
                             <button type="button" onclick="polygon5()">Click Me!</button>
                         </div>
-
-
-                    </td>
-                    <td  width="800px" valign="bottom">
+                    
+                    </div>
+                    
+                    <div class="col-lg-9">
+                    
                         <div id="googleMap" class="maps "style="width:100%;height:500px;"></div>
-                    </td>
-                </tr>
+                        
+                    </div>
+                
+                </div>
+                        
+                        
 
-            </table>
+
+                    
+                    <div style="border: 0px solid red;">-</div>
+            
+            <div class="row">
+            
+                <div class="col-lg-4" style="border-right: 1px solid black; height: 300px; padding: 0px;">
+                
+                    <div style="text-align: center"><b>Information</b></div>
+                    
+                    <br/>
+                    
+                    <div>Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard. </div>
+                    
+                    <br/>
+                    
+                    <div style="text-align: center;"><img src="img/hubbard.jpg" style="height: 200px;"></div>
+                    
+                    
+                </div>
+                
+                <div class="col-lg-4" style="border-right: 1px solid black; height: 300px; padding: 0px;">
+                
+                    <div style="text-align: center"><b>C02 Graph</b></div>
+                    
+                    <br/>
+                                    
+                    <div style="text-align: center;"><img src="img/g1.PNG" style="height: 250px;"></div>
+                    
+                    
+                </div>
+                
+                <div class="col-lg-4" style="height: 300px;">
+                
+                </div>
+            
+            </div>
+            
+            
+                
+
+            
             <div class="bottom" id="bottom">
-                hi
+                Copyright EarthGoHard2017
             </div>
 
 
@@ -48,7 +105,7 @@
     </body>
 
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT18ob4OHZYKc16v6JzczAY7HLH4CXtHI&callback=myMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT18ob4OHZYKc16v6JzczAY7HLH4CXtHI&libraries=visualization&callback=myMap">
         </script>
 
 	<script type="text/javascript" src="js/main.js"></script>

@@ -15,6 +15,7 @@ function myMap() {
     // This example uses a local copy of the GeoJSON stored at
     // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
     script.src = 'https://prayashm97.github.io/js/ajax/Hubbard.js';
+    
     document.getElementsByTagName('head')[0].appendChild(script);
 
     map.data.setStyle(function(feature) {
@@ -118,23 +119,22 @@ function myMap() {
         });
         return(returnVal);
     };
-}
-
-function getCircle(mag) {
-
-    return {
+    function getCircle(magnitude) {
+        return {
           path: google.maps.SymbolPath.CIRCLE,
           fillColor: 'red',
           fillOpacity: .2,
-          scale: Math.pow(2, mag) / 2,
+          scale: Math.pow(2, magnitude) / 2,
           strokeColor: 'white',
           strokeWeight: .5
         };
-
+    }
 }
+
+
 function eqfeed_callback(results) {
-        map.data.addGeoJson(results);
-      }
+      map.data.addGeoJson(results);
+}
 function polygon5() {
     poly2.setMap(null);
     poly1.setMap(null);
