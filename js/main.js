@@ -164,40 +164,53 @@ function polygon1() {
     var glink;
 
 
-function aClicked(){
-    des = "Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard.";
-    imglink = "img/a.jpg";
-    glink = "graphs/a.PNG";
-    giflink = "gifs/a.gif";
-    polygon1();
+    function aClicked(){
+
+        $("#b").css("background-color", "white");
+        $("#c").css("background-color", "white");
+        $("#a").css("background-color", "#e6ffff");
+
+        des = "Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard.";
+        imglink = "img/a.jpg";
+        glink = "graphs/a.PNG";
+        giflink = "gifs/a.gif";
+        polygon1();
 
 
-    changebottom(des, imglink, glink, giflink);
-}
+        changebottom(des, imglink, glink, giflink);
+    }
 
-function bClicked ()
-{
-    des = "The Barnes Ice Cap is an ice cap located in central Baffin Island, Nunavut, Canada. It covers close to 6,000 km2 (2,300 sq mi) in the area of the Baffin Mountains. It has been thinning due to regional warming.";
-    imglink = "img/b.jpg";
-    glink = "graphs/b.PNG";
-    giflink = "gifs/b.gif";
+    function bClicked ()
+    {
 
-    polygon2();
+        $("#a").css("background-color", "white");
+        $("#c").css("background-color", "white");
+        $("#b").css("background-color", "#e6ffff");
 
-    changebottom(des, imglink, glink, giflink);
-}
+        des = "The Barnes Ice Cap is an ice cap located in central Baffin Island, Nunavut, Canada. It covers close to 6,000 km2 (2,300 sq mi) in the area of the Baffin Mountains. It has been thinning due to regional warming.";
+        imglink = "img/b.jpg";
+        glink = "graphs/b.PNG";
+        giflink = "gifs/b.gif";
 
-function cClicked ()
-{
-    des = "The Athabasca Glacier is one of the six principal 'toes' of the Columbia Icefield, located in the Canadian Rockies. The glacier currently recedes at a rate of about 5 metres (16 ft) per year.";
-    imglink = "img/c.jpg";
-    glink = "graphs/b.PNG";
-    giflink = "gifs/c.gif";
+        polygon2();
 
-    changebottom(des, imglink, glink, giflink);
-    polygon3();
+        changebottom(des, imglink, glink, giflink);
+    }
 
-}
+    function cClicked ()
+    {
+
+        $("#a").css("background-color", "white");
+        $("#b").css("background-color", "white");
+        $("#c").css("background-color", "#e6ffff");
+
+        des = "The Athabasca Glacier is one of the six principal 'toes' of the Columbia Icefield, located in the Canadian Rockies. The glacier currently recedes at a rate of about 5 metres (16 ft) per year.";
+        imglink = "img/c.jpg";
+        glink = "graphs/c.PNG";
+        giflink = "gifs/c.gif";
+
+        changebottom(des, imglink, glink, giflink);
+    }
 
 
 function changebottom(des, imglink, glink, giflink){
