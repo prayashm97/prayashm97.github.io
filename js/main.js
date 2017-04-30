@@ -9,21 +9,6 @@ function myMap() {
 
     });
 
-    // Create a <script> tag and set the USGS URL as the source.
-    var script = document.createElement('script');
-
-    // This example uses a local copy of the GeoJSON stored at
-    // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
-    script.src = 'https://prayashm97.github.io/js/ajax/Hubbard.js';
-    
-    document.getElementsByTagName('head')[0].appendChild(script);
-
-    map.data.setStyle(function(feature) {
-      var magnitude = feature.getProperty('CO2');
-      return {
-        icon: getCircle(magnitude)
-      };
-    });
 
     var poly1First = new google.maps.LatLng(60.47658 ,-144.46691);
     var poly1Second = new google.maps.LatLng(59.05792,-138.11682);
@@ -39,12 +24,14 @@ function myMap() {
         fillOpacity: 0.4
     });
 
-    var poly2First = new google.maps.LatLng(45.983991,3.734863);
-    var poly2Second = new google.maps.LatLng(32.395715,9.888916);
-    var poly2Third = new google.maps.LatLng(21.508742,-2.120850);
+    var poly2First = new google.maps.LatLng(70.16,-76.81);
+    var poly2Second = new google.maps.LatLng(70.93,-73.45);
+    var poly2Third = new google.maps.LatLng(69.92,-68.58);
+    var poly2Forth = new google.maps.LatLng(68.52,-73.30);
+    var poly2Fifth = new google.maps.LatLng(70.16,-76.81);
 
     poly2 = new google.maps.Polygon({
-        path: [poly2First, poly2Second, poly2Third],
+        path: [poly2First, poly2Second, poly2Third,poly2Forth,poly2Fifth],
         strokeColor: "#FFFFFF",
         strokeOpacity: 0.8,
         strokeWeight: 2,
@@ -92,17 +79,17 @@ function myMap() {
     });
 
 
-    // heatmap = new google.maps.visualization.HeatmapLayer({
-    //       data: getPoints(),
-    //       map: map,
-    //       opacity:0.6,
-    // });
+    heatmap = new google.maps.visualization.HeatmapLayer({
+          data: getPoints(),
+          map: map,
+          opacity:0.6,
+    });
 
-    // heatmap = new google.maps.visualization.HeatmapLayer({
-    //       data: getPoints(),
-    //       map: map
-    //     });
-    //
+    heatmap = new google.maps.visualization.HeatmapLayer({
+          data: getPoints(),
+          map: map
+        });
+
     function getPoints() {
         var returnVal = [];
 
@@ -119,22 +106,10 @@ function myMap() {
         });
         return(returnVal);
     };
-    function getCircle(magnitude) {
-        return {
-          path: google.maps.SymbolPath.CIRCLE,
-          fillColor: 'red',
-          fillOpacity: .2,
-          scale: Math.pow(2, magnitude) / 2,
-          strokeColor: 'white',
-          strokeWeight: .5
-        };
-    }
+
 }
 
 
-function eqfeed_callback(results) {
-      map.data.addGeoJson(results);
-}
 function polygon5() {
     poly2.setMap(null);
     poly1.setMap(null);
@@ -179,4 +154,58 @@ function polygon1() {
     poly5.setMap(null);
 
     poly1.setMap(map);
+}
+
+    var des;
+    var imglink;
+    var glink;
+
+
+function aClicked(){
+    des = "Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard.";
+    imglink = "img/a.jpg";
+    glink = "graphs/a.PNG";
+    giflink = "gifs/a.gif";
+    polygon1();
+
+
+    changebottom(des, imglink, glink, giflink);
+}
+
+function bClicked ()
+{
+    des = "The Barnes Ice Cap is an ice cap located in central Baffin Island, Nunavut, Canada. It covers close to 6,000 km2 (2,300 sq mi) in the area of the Baffin Mountains. It has been thinning due to regional warming.";
+    imglink = "img/b.jpg";
+    glink = "graphs/b.PNG";
+    giflink = "gifs/b.gif";
+
+    polygon2();
+
+    changebottom(des, imglink, glink, giflink);
+}
+
+function cClicked ()
+{
+    des = "The Athabasca Glacier is one of the six principal 'toes' of the Columbia Icefield, located in the Canadian Rockies. The glacier currently recedes at a rate of about 5 metres (16 ft) per year.";
+    imglink = "img/c.jpg";
+    glink = "graphs/b.PNG";
+    giflink = "gifs/c.gif";
+
+    changebottom(des, imglink, glink, giflink);
+}
+
+
+function changebottom(des, imglink, glink, giflink){
+
+    console.log(des);
+    console.log(imglink);
+    console.log(glink);
+    console.log(giflink);
+
+    $("#des").html(des);
+    $("#imglink").attr("src",imglink);
+    $("#glink").attr("src",glink);
+    $("#giflink").attr("src",giflink);
+
+
 }
