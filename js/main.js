@@ -3,8 +3,8 @@ var map, heatMap;
 function myMap() {
 
     map=new google.maps.Map(document.getElementById("googleMap"),{
-        zoom:5,
-        center:new google.maps.LatLng(43.6532, -79.3832),
+        zoom:4,
+        center:new google.maps.LatLng(58.648296, -108.173099),
         mapTypeId: 'satellite'
 
     });
@@ -98,15 +98,18 @@ function myMap() {
 
         $.getJSON( "https://prayashm97.github.io/js/ajax/testfile.json", function( data ) {
           // var items = [];
+          console.log(data);
           $.each( data, function( key, val ) {
             //   console.log(val.CO2);
               x = {
                   'location':new google.maps.LatLng(val.Latitude,val.Longitude), 'weight': (((val.CO2)-371)/16)
               }
 
+
               returnVal.push(x)
           });
-        });
+        })
+        // .error(function(err) { console.log(err); });
         return(returnVal);
     };
 
