@@ -42,7 +42,6 @@ function myMap() {
 
     var poly3First = new google.maps.LatLng(52.38365 ,-118.59961);
     var poly3Second = new google.maps.LatLng(52.38365 ,-115.92773);
-
     var poly3Third = new google.maps.LatLng(51.50874,-115.92773);
     var poly3Fourth = new google.maps.LatLng(51.50874,-118.59961);
 
@@ -82,11 +81,100 @@ function myMap() {
     });
 
 
-    heatmap = new google.maps.visualization.HeatmapLayer({
-          data: getPoints(),
-          map: map,
-          opacity:0.6,
+    var drownFirst1 = new google.maps.LatLng(36.30129, -121.57471);
+    var drownFirst2 = new google.maps.LatLng(37.04148, -120.47607);
+    var drownFirst3 = new google.maps.LatLng(38.46596, -120.60791);
+    var drownFirst4 = new google.maps.LatLng(39.59246, -121.57471);
+    var drownFirst5 = new google.maps.LatLng(39.59246, -123.55225);
+
+
+    nyc = new google.maps.Polygon({
+        path: [drownFirst1, drownFirst2, drownFirst3,drownFirst4],
+        strokeColor: "#ffff00",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#ffff00",
+        fillOpacity: 0.4
     });
+
+    var drownSecond1 = new google.maps.LatLng(45.74620, -73.04810);
+    var drownSecond2 = new google.maps.LatLng(45.90698, -74.02588);
+    var drownSecond3 = new google.maps.LatLng(45.26111, -73.43262);
+
+    mtl = new google.maps.Polygon({
+        path: [drownSecond1, drownSecond2, drownSecond3],
+        strokeColor: "#ffff00",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#ffff00",
+        fillOpacity: 0.4
+    });
+
+    var drownThird1 = new google.maps.LatLng(30.03871, -90.32959);
+    var drownThird2 = new google.maps.LatLng(29.87213, -90.22522);
+    var drownThird3 = new google.maps.LatLng(29.71959, -89.90662);
+    var drownThird4 = new google.maps.LatLng(30.08150, -89.91211);
+
+    nor = new google.maps.Polygon({
+        path: [drownThird1, drownThird2, drownThird3,drownThird4],
+        strokeColor: "#ffff00",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#ffff00",
+        fillOpacity: 0.4
+    });
+
+    var drownForth1 = new google.maps.LatLng(37.80826, -122.52722);
+    var drownForth2 = new google.maps.LatLng(37.80826 -122.35968);
+    var drownForth3 = new google.maps.LatLng(37.68882 -122.35968);
+    var drownForth4 = new google.maps.LatLng(37.68882 -122.52722);
+
+    sanf = new google.maps.Polygon({
+        path: [drownForth1, drownForth2, drownForth3,drownForth4],
+        strokeColor: "#ffff00",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#ffff00",
+        fillOpacity: 0.4
+    });
+
+    var drownFifth1 = new google.maps.LatLng(46.74702, -71.45714);
+    var drownFifth2 = new google.maps.LatLng(46.90300, -71.43929);
+    var drownFifth3 = new google.maps.LatLng(46.89268, -71.16325);
+    var drownFifth4 = new google.maps.LatLng(46.74608, -71.25938);
+
+    Qcity = new google.maps.Polygon({
+        path: [drownFifth1, drownFifth2, drownFifth3,drownFifth4],
+        strokeColor: "#ffff00",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#ffff00",
+        fillOpacity: 0.4
+    });
+
+    var drownSixth1 = new google.maps.LatLng(26.77312, -80.09033);
+    var drownSixth2 = new google.maps.LatLng(26.38503, -80.48584);
+    var drownSixth3 = new google.maps.LatLng(25.85729, -80.85388);
+    var drownSixth4 = new google.maps.LatLng(25.23779, -80.56824);
+    var drownSixth4 = new google.maps.LatLng(25.99068, -80.06287);
+
+    Miami = new google.maps.Polygon({
+        path: [drownSixth1, drownSixth2, drownSixth3,drownSixth4],
+        strokeColor: "#ffff00",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#ffff00",
+        fillOpacity: 0.4
+    });
+
+
+    Miami.setMap(map);
+    sanf.setMap(map);
+    nyc.setMap(map);
+    nor.setMap(map);
+    Qcity.setMap(map);
+    mtl.setMap(map);
+
 
     heatmap = new google.maps.visualization.HeatmapLayer({
           data: getPoints(),
@@ -165,6 +253,7 @@ function polygon1() {
 
 
     function aClicked(){
+        map.setZoom(3);
 
         $("#b").css("background-color", "white");
         $("#c").css("background-color", "white");
@@ -176,12 +265,15 @@ function polygon1() {
         giflink = "gifs/a.gif";
         polygon1();
 
-
+        map.setCenter({lat: 60.47658, lng: -144.46691});
+        map.setZoom(5);
         changebottom(des, imglink, glink, giflink);
     }
 
     function bClicked ()
     {
+        map.setZoom(3);
+
 
         $("#a").css("background-color", "white");
         $("#c").css("background-color", "white");
@@ -195,10 +287,16 @@ function polygon1() {
         polygon2();
 
         changebottom(des, imglink, glink, giflink);
+
+        map.setCenter({lat: 70.16, lng: -76.81});
+        map.setZoom(5);
+
     }
 
     function cClicked ()
     {
+        map.setZoom(3);
+
 
         $("#a").css("background-color", "white");
         $("#b").css("background-color", "white");
@@ -209,8 +307,11 @@ function polygon1() {
         glink = "graphs/c.PNG";
         giflink = "gifs/c.gif";
         polygon3();
+        map.setCenter({lat: 52.38365, lng: -115.92773});
 
         changebottom(des, imglink, glink, giflink);
+        map.setZoom(5);
+
     }
 
 
