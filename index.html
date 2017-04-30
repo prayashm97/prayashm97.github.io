@@ -8,43 +8,57 @@
 		<title>Earth Go Hard</title>
 
 	</head>
-    <body>
+    <body style="background-color: #f2f2f2">
 		<div class="main">
-            <div class='Header'>
-                <h1>EARTH GO HARD!</h1>
+            <div class='Header' style="background-color: white;">
+                <img src="img/logo.png" style="height: 100px;">
             </div>
+
+            <br/>
 
 
                 <div class="row" style="border:0px solid blue; text-align: center; padding: 0px;">
 
-                    <div class="col-lg-3" style="border: 0px solid red; padding: 0px; cursor: pointer; overflow:scroll; height:500px;">
+                    <div class="col-lg-3" style="border: 0px solid red; padding: 0px; cursor: pointer; overflow-y: scroll; height:500px;">
 
-                        <div id="a" style="border: 0px solid blue; padding-top: 10px; padding-bottom: 10px; margin: 2px; background-color: #e6ffff;" onclick = "aClicked()">
+                        <div id="a" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: #e6ffff;" onclick = "aClicked()">
 
                             <h4>Hubbard Glacier | A</h4>
-                            <div><em>Show C02 levels</em></div>
+
                         </div>
-                        <div id="b" style="border: 0px solid blue; padding-top: 10px; padding-bottom: 10px; margin: 2px; background-color: #e6ffe6;" onclick = "bClicked()">
+                        <div id="b" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" onclick = "bClicked()">
 
                             <h4>Barnes Ice Cap | B</h4>
-                             <div><em>Show C02 levels</em></div>
+
                         </div>
-                        <div id="c" style="border: 0px solid blue; padding-top: 10px; padding-bottom: 10px; margin: 2px; background-color: #e6ffe6;" onclick = "cClicked()">
+                        <div id="c" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" onclick = "cClicked()">
 
                             <h4>Athabasca Glacier | C</h4>
-                             <div><em>Show C02 levels</em></div>
+
                         </div>
-                        <div class="Buttons" valign="bottom">
-                            <button type="button" onclick="polygon2()">Click Me!</button>
+
+                        <div id="d" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" >
+
+                            <h4>Devon Ice Cap | D</h4>
+
                         </div>
-                        <div class="Buttons" valign="bottom">
-                            <button type="button" onclick="polygon3()">Click Me!</button>
+
+                        <div id="e" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" >
+
+                            <h4>Dome Glacier | E</h4>
+
                         </div>
-                        <div class="Buttons" valign="bottom">
-                            <button type="button" onclick="polygon4()">Click Me!</button>
+
+                        <div id="f" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;">
+
+                            <h4>Nuuksuq Glacier | F</h4>
+
                         </div>
-                        <div class="Buttons" valign="bottom">
-                            <button type="button" onclick="polygon5()">Click Me!</button>
+
+                        <div id="g" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" >
+
+                            <h4>Penny Ice Cap | G</h4>
+
                         </div>
 
                     </div>
@@ -61,54 +75,68 @@
 
 
 
-                    <div style="border: 0px solid red;">-</div>
-
-            <div class="row">
-
-                <div class="col-lg-4" style="border-right: 1px solid black; height: 300px; padding: 0px;">
-
-                    <div style="text-align: center"><b>Information</b></div>
-
                     <br/>
 
-                    <div id="des">Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard. </div>
+            <div class="row" style="margin-top: 10px;">
 
-                    <br/>
+                <div class="col-lg-4" style="border-right: 0px solid black; height: 350px; padding: 5px;">
 
-                    <div style="text-align: center;"><img id="imglink" src="img/a.jpg" style="height: 200px;"></div>
+                    <div style="background-color: white; padding: 5px; height: 350px;">
+
+                        <div style="text-align: center; font-size: 20px;"><b>Information</b></div>
+
+                        <br/>
+
+                        <div id="des">Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard. </div>
+
+                        <br/>
+
+                        <div style="text-align: center;"><img id="imglink" src="img/a.jpg" style="height: 200px;"></div>
+
+                    </div>
 
 
                 </div>
 
-                <div class="col-lg-4" style="border-right: 1px solid black; height: 300px; padding: 0px;">
+                <div class="col-lg-4" style="border-right: 0px solid black; height: 350px; padding: 5px;">
 
-                    <div style="text-align: center"><b>C02 Graph</b></div>
+                    <div style="background-color: white; padding: 5px; height: 350px;">
 
-                    <br/>
+                        <div style="text-align: center; font-size: 20px;"><b>C02 Graph</b></div>
 
-                    <div style="text-align: center;"><img id="glink" src="graphs/a.PNG" style="height: 250px;"></div>
+                        <br/>
+
+                        <div style="text-align: center;"><img id="glink" src="graphs/a.PNG" style="height: 250px;"></div>
+
+                    </div>
 
 
                 </div>
 
-                <div class="col-lg-4" style="border-right: 1px solid black; height: 300px; padding: 0px;">
+                <div class="col-lg-4" style="height: 350px; padding: 5px;">
 
-                    <div style="text-align: center"><b>Timelapse</b></div>
+                    <div style="background-color: white; padding: 5px; height: 350px;">
 
-                    <br/>
+                        <div style="text-align: center; font-size: 20px;"><b>Timelapse</b></div>
 
-                    <div style="text-align: center;"><img id="giflink" src="gifs/a.gif" style="height: 250px;"></div>
+                        <br/>
+
+                        <div style="text-align: center;"><img id="giflink" src="gifs/a.gif" style="height: 250px;"></div>
+
+                    </div>
 
                 </div>
 
             </div>
 
+            <br/><br/><br/>
 
 
 
 
-            <div class="bottom" id="bottom">
-                Copyright EarthGoHard2017
+
+            <div class="bottom" id="bottom" style="font-size: 9px;">
+                Team hackstreetboys | Space Apps 2017 | Skywatch Challenge
             </div>
 
 

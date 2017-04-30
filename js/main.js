@@ -3,7 +3,7 @@ var map, heatMap;
 function myMap() {
 
     map=new google.maps.Map(document.getElementById("googleMap"),{
-        zoom:4,
+        zoom:3,
         center:new google.maps.LatLng(58.648296, -108.173099),
         mapTypeId: 'satellite'
 
@@ -97,10 +97,7 @@ function myMap() {
         var returnVal = [];
 
         $.getJSON( "https://prayashm97.github.io/js/ajax/testfile.json", function( data ) {
-          // var items = [];
-          console.log(data);
           $.each( data, function( key, val ) {
-            //   console.log(val.CO2);
               x = {
                   'location':new google.maps.LatLng(val.Latitude,val.Longitude), 'weight': (((val.CO2)-371)/16)
               }
@@ -205,10 +202,7 @@ function cClicked ()
 
 function changebottom(des, imglink, glink, giflink){
 
-    console.log(des);
-    console.log(imglink);
-    console.log(glink);
-    console.log(giflink);
+
 
     $("#des").html(des);
     $("#imglink").attr("src",imglink);
