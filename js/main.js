@@ -109,7 +109,7 @@ function myMap() {
               returnVal.push(x)
           });
         })
-        // .error(function(err) { console.log(err); });
+        .error(function(err) { console.error(err)});
         return(returnVal);
     };
 
