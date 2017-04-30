@@ -208,6 +208,7 @@ function polygon1() {
         imglink = "img/c.jpg";
         glink = "graphs/c.PNG";
         giflink = "gifs/c.gif";
+        polygon3();
 
         changebottom(des, imglink, glink, giflink);
     }
