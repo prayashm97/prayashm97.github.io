@@ -1,0 +1,162 @@
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet"  type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+		<title>Earth Go Hard</title>
+
+	</head>
+    <body style="background-color: #f2f2f2">
+		<div class="main">
+            <div class='Header' style="background-color: white;">
+                <img src="img/logo.png" style="height: 100px;">
+            </div>
+
+            <br/>
+
+
+                <div class="row" style="border:0px solid blue; text-align: center; padding: 0px;">
+
+                    <div class="col-lg-3" style="border: 0px solid red; padding: 0px; cursor: pointer; overflow-y: scroll; height:500px;">
+
+                        <div id="a" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: #e6ffff;" onclick = "aClicked()">
+
+                            <h4>Hubbard Glacier | A</h4>
+
+                        </div>
+                        <div id="b" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" onclick = "bClicked()">
+
+                            <h4>Barnes Ice Cap | B</h4>
+
+                        </div>
+                        <div id="c" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" onclick = "cClicked()">
+
+                            <h4>Athabasca Glacier | C</h4>
+
+                        </div>
+
+                        <div id="d" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" >
+
+                            <h4>Devon Ice Cap | D</h4>
+
+                        </div>
+
+                        <div id="e" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" >
+
+                            <h4>Dome Glacier | E</h4>
+
+                        </div>
+
+                        <div id="f" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;">
+
+                            <h4>Nuuksuq Glacier | F</h4>
+
+                        </div>
+
+                        <div id="g" style="border: 0px solid blue; padding-top: 20px; padding-bottom: 20px; margin: 2px; background-color: white;" >
+
+                            <h4>Penny Ice Cap | G</h4>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-9">
+
+                        <div id="googleMap" class="maps "style="width:100%;height:500px;"></div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                    <br/>
+
+            <div class="row" style="margin-top: 10px;">
+
+                <div class="col-lg-4" style="border-right: 0px solid black; height: 350px; padding: 5px;">
+
+                    <div style="background-color: white; padding: 5px; height: 350px;">
+
+                        <div style="text-align: center; font-size: 20px;"><b>Information</b></div>
+
+                        <br/>
+
+                        <div id="des">Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard. </div>
+
+                        <br/>
+
+                        <div style="text-align: center;"><img id="imglink" src="img/a.jpg" style="height: 200px;"></div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-4" style="border-right: 0px solid black; height: 350px; padding: 5px;">
+
+                    <div style="background-color: white; padding: 5px; height: 350px;">
+
+                        <div style="text-align: center; font-size: 20px;"><b>C02 Graph</b></div>
+
+                        <br/>
+
+                        <div style="text-align: center;"><img id="glink" src="graphs/a.PNG" style="height: 250px;"></div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-4" style="height: 350px; padding: 5px;">
+
+                    <div style="background-color: white; padding: 5px; height: 350px;">
+
+                        <div style="text-align: center; font-size: 20px;"><b>Timelapse</b></div>
+
+                        <br/>
+
+                        <div style="text-align: center;"><img id="giflink" src="gifs/a.gif" style="height: 250px;"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br/>
+
+            <div style="text-align: right">
+                <img src="img/red.png" style="height: 20px;"> *Intensity of color depends on level of CO2 <br/>
+                <img src="img/yellow.png" style="height: 20px;"> Cities that are at risk of flooding if sea levels rise >2M
+            </div>
+
+            <br/><br/><br/>
+
+
+
+
+
+
+
+            <div class="bottom" id="bottom" style="font-size: 9px;">
+                Team hackstreetboys | Space Apps 2017 | Skywatch Challenge
+            </div>
+
+
+		</div>
+    </body>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT18ob4OHZYKc16v6JzczAY7HLH4CXtHI&libraries=visualization&callback=myMap">
+        </script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+<!--    AIzaSyCT18ob4OHZYKc16v6JzczAY7HLH4CXtHI -->
+</html>
