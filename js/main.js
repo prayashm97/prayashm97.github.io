@@ -184,7 +184,7 @@ function myMap() {
     function getPoints() {
         var returnVal = [];
 
-        $.getJSON( "https://prayashm97.github.io/js/ajax/testfile.json", function( data ) {
+        $.getJSON( "https://pmishra.me/js/ajax/testfile.json", function( data ) {
           $.each( data, function( key, val ) {
               x = {
                   'location':new google.maps.LatLng(val.Latitude,val.Longitude), 'weight': (((val.CO2)-371)/16)
