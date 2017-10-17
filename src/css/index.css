@@ -1,0 +1,409 @@
+.header-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	height: 230px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+}
+
+
+.not-header {
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-nav .header-nav-inner {
+	width: 80%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.container {
+	position: relative;
+	margin-top: 15em;
+}
+
+#particles-js {
+  height: inherit;
+  width: 100%;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0;
+}
+
+.header-nav h1,
+.header-nav nav {
+	display: inline-block;
+	position: relative;
+}
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.header-nav h1,
+.header-nav nav a {
+	line-height: 230px;
+}
+
+.header-nav h1 {
+	text-transform: uppercase;
+	color: #EAEAEA;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: left;
+}
+
+.header-nav nav {
+	float: right;
+}
+
+.header-nav nav a {
+	color: #aaa;
+	font-weight: 700;
+	margin: 0 0 0 20px;
+	font-size: 1.6em;
+  border-bottom: 5px solid transparent;
+  transition: .5s;
+}
+
+.header-nav nav a span,
+.header-nav-inner h1 span{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#about:hover{border-color: #aa73ff;}
+#proj:hover{border-color: #f8c210;}
+#contact:hover{border-color: #83d238;}
+#skills:hover{border-color: #33b1f8;}
+
+
+.header-nav nav a:hover {
+	color: #EAEAEA;
+}
+
+/* Transitions and class for reduced height */
+.header-nav h1,
+.header-nav nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.header-nav.header-nav-shrink {
+	height: 90px;
+}
+
+.header-nav.header-nav-shrink h1,
+.header-nav.header-nav-shrink nav a {
+	line-height: 90px;
+}
+
+.header-nav.header-nav-shrink nav a {
+  font-size: 1em;
+}
+
+.header-nav.header-nav-shrink h1 {
+	font-size: 3em;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+
+	.header-nav .header-nav-inner {
+		width: 100%;
+	}
+
+
+	.header-nav h1,
+	.header-nav nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+	}
+
+	.header-nav h1,
+	.header-nav nav a {
+		line-height: 115px;
+	}
+
+  .header-nav h1 {
+    font-size: 3em;
+	}
+
+	.header-nav nav a {
+		margin: 0 10px;
+    font-size: 1.2em;
+	}
+
+	.header-nav.header-nav-shrink h1,
+	.header-nav.header-nav-shrink nav a {
+		line-height: 45px;
+	}
+
+	.header-nav.header-nav-shrink h1 {
+		font-size: 2em;
+	}
+
+	.header-nav.header-nav-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.header-nav nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.header-nav nav a,
+	.header-nav.header-nav-shrink nav a {
+		line-height: 1;
+
+	}
+}.header-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+	height: 230px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+}
+
+.about:hover{border-color: #aa73ff;}
+.proj:hover{border-color: #f8c210;}
+.contact:hover{border-color: #83d238;}
+.skills:hover{border-color: #33b1f8;}
+
+.not-header {
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-nav .header-nav-inner {
+	width: 80%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 0;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.container {
+	position: relative;
+	margin-top: 15em;
+}
+
+header,
+.main section > div {
+  width: 90%;
+  max-width: 69em;
+  margin: 3em auto;
+  padding: 2.5em 1.875em 1.875em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.img-picture {
+  border-radius: 50%;
+  float: left;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: 15px;
+}
+
+.inner-header-name{
+  text-align:left;
+  font-size: 2.5em;
+}
+
+.inner-header-desc{
+  text-align:center;
+  font-size: 1.25em;
+}
+
+#particles-js {
+  height: inherit;
+  width: 100%;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0;
+}
+
+.header-nav h1,
+.header-nav nav {
+	display: inline-block;
+	position: relative;
+}
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+.header-nav h1,
+.header-nav nav a {
+	line-height: 230px;
+}
+
+.header-nav h1 {
+	text-transform: uppercase;
+	color: #EAEAEA;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: left;
+}
+
+.header-nav nav {
+	float: right;
+}
+
+.header-nav nav a {
+	color: #aaa;
+	font-weight: 700;
+	margin: 0 0 0 20px;
+	font-size: 1.6em;
+  border-bottom: 5px solid transparent;
+  transition: .5s;
+}
+
+.header-nav nav a span,
+.header-nav-inner h1 span{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-nav nav a:hover {
+	color: #EAEAEA;
+}
+
+/* Transitions and class for reduced height */
+.header-nav h1,
+.header-nav nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.header-nav.header-nav-shrink {
+	height: 90px;
+}
+
+.header-nav.header-nav-shrink h1,
+.header-nav.header-nav-shrink nav a {
+	line-height: 90px;
+}
+
+.header-nav.header-nav-shrink nav a {
+  font-size: 1em;
+}
+
+.header-nav.header-nav-shrink h1 {
+	font-size: 3em;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+
+	.header-nav .header-nav-inner {
+		width: 100%;
+	}
+
+  .inner-header-name{
+    font-size: 2.0em;
+  }
+
+  .inner-header-desc{
+    font-size: 1em;
+  }
+
+	.header-nav h1,
+	.header-nav nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+	}
+
+	.header-nav h1,
+	.header-nav nav a {
+		line-height: 115px;
+	}
+
+  .header-nav h1 {
+    font-size: 3em;
+	}
+
+	.header-nav nav a {
+		margin: 0 10px;
+    font-size: 1.2em;
+	}
+
+	.header-nav.header-nav-shrink h1,
+	.header-nav.header-nav-shrink nav a {
+		line-height: 45px;
+	}
+
+	.header-nav.header-nav-shrink h1 {
+		font-size: 2em;
+	}
+
+	.header-nav.header-nav-shrink nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 32.25em) {
+	.header-nav nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.header-nav nav a,
+	.header-nav.header-nav-shrink nav a {
+		line-height: 1;
+
+	}
+}
