@@ -1,5 +1,5 @@
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'https://raw.githubusercontent.com/prayashm97/portfolio-new/master/assets/particles.json?token=ARZzITV6IIZcsp58vXbaLNHcNTTuNm_Zks5ZoaJ3wA%3D%3D', function () {
+particlesJS.load('particles-js', './assets/particles.json', function () {
   console.log('callback - particles.js config loaded')
 })
 
