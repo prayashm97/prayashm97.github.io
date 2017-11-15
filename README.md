@@ -1,12 +1,20 @@
 # prayashm97.github.io
 ## Hosting hackstreetboys 2017 NASA SpaceApps
 
+### Skywatch- Nasa Space Apps 2017 Waterloo : NASA Challenge Winner
+### Space Apps 2017 Waterloo : Best use of SkyWatch API
+
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/IBPh9Sa0lUU/0.jpg)](http://www.youtube.com/watch?v=IBPh9Sa0lUU)
 
 # iceHero
 >iceHero is an application for educating the population about the relationship between CO2 emissions and the retreat of glaciers. 
 >It also gives scientists a tool to estimate glacier melting rates, when image satellites are unavailable, using CO2 levels.
 
+## Challenge 
+```
+Using the SkyWatch API and OCO-2 Satellite data create an application to examine the variation and change in CO2 levels across North America for the last 2-3 years, based on geographic sub-units of your choosing, and tell your own story of human-atmospheric interactions.
+```
+## Our Solution
 ```
 We designed a simple application that lets the user look at different glaciers across North America and learn about how glacier retreat causes high levels of CO2 emissions. The goal of iceHero is to be a tool for monitoring glacier melt and its relationship on CO2. As a next step, the tool can use aerosol data above glaciers to forecast and predict the rate of glacier melt, which can be used by scientists.
 
