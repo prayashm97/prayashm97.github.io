@@ -34,7 +34,7 @@ We want iceHero to fill this void. By using CO2 and other aerosol data to foreca
 
 ```
 ```
-Link: https://prayashm97.github.io
+Link: http://pmishra.me
 
 Github repository : https://github.com/prayashm97/prayashm97.github.io
 
