@@ -260,9 +260,9 @@ function polygon1() {
         $("#a").css("background-color", "#e6ffff");
 
         des = "Hubbard Glacier is a glacier located in eastern Alaska and part of Yukon, Canada, and named after Gardiner Hubbard.";
-        imglink = "img/a.jpg";
-        glink = "graphs/a.PNG";
-        giflink = "gifs/a.gif";
+        imglink = "assets/img/a.jpg";
+        glink = "assets/graphs/a.PNG";
+        giflink = "assets/gifs/a.gif";
         polygon1();
 
         map.setCenter({lat: 60.47658, lng: -144.46691});
@@ -280,9 +280,9 @@ function polygon1() {
         $("#b").css("background-color", "#e6ffff");
 
         des = "The Barnes Ice Cap is an ice cap located in central Baffin Island, Nunavut, Canada. It covers close to 6,000 km2 (2,300 sq mi) in the area of the Baffin Mountains. It has been thinning due to regional warming.";
-        imglink = "img/b.jpg";
-        glink = "graphs/b.PNG";
-        giflink = "gifs/b.gif";
+        imglink = "assets/img/b.jpg";
+        glink = "assets/graphs/b.PNG";
+        giflink = "assets/gifs/b.gif";
 
         polygon2();
 
@@ -303,9 +303,9 @@ function polygon1() {
         $("#c").css("background-color", "#e6ffff");
 
         des = "The Athabasca Glacier is one of the six principal 'toes' of the Columbia Icefield, located in the Canadian Rockies. The glacier currently recedes at a rate of about 5 metres (16 ft) per year.";
-        imglink = "img/c.jpg";
-        glink = "graphs/c.PNG";
-        giflink = "gifs/c.gif";
+        imglink = "assets/img/c.jpg";
+        glink = "assets/graphs/c.PNG";
+        giflink = "assets/gifs/c.gif";
         polygon3();
         map.setCenter({lat: 52.38365, lng: -115.92773});
 
