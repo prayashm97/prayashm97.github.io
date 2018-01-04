@@ -46,6 +46,17 @@ html, body{
     float: right;
 }
 
+.first-paragraph {
+    text-indent: 50px;
+}
+
+blockquote{
+    text-align: right;
+    float:right;
+    border-left: 0 !important;
+    border-right: 5px solid #eee;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -60,9 +71,9 @@ html, body{
         margin-left: 5rem;
     }
     .logo{
-        width: 200px;
-        height: 200px;
-        margin-top: -15px;
+        width: 250px;
+        height: 250px;
+        margin-top: -40px;
         /* margin-right: 10em; */
     }
 }
