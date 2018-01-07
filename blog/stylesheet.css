@@ -1,5 +1,5 @@
 html, body{
-    background-color: rgba(244, 208, 62,0.05) !important;
+    background-color: rgba(244, 208, 62,0.1) !important;
     
 }
 
@@ -44,6 +44,11 @@ html, body{
     -webkit-border-radius: 25%;
     -moz-border-radius: 25%; */
     float: right;
+
+    -webkit-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
+    -moz-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
+    box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
+    
 }
 
 .first-paragraph {
@@ -54,10 +59,8 @@ blockquote{
     text-align: right;
     float:right;
     border-left: 0 !important;
-    border-right: 5px solid #eee;
+    border-right: 5px solid #002639;
 }
-
-
 
 @media screen and (min-width: 768px) {
     .headings{
@@ -75,6 +78,9 @@ blockquote{
         height: 250px;
         margin-top: -40px;
         /* margin-right: 10em; */
+    }
+    .media-video {
+        width: 75% !important;
     }
 }
 
