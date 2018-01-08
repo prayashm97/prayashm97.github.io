@@ -21,7 +21,9 @@ html, body{
     bottom: -7px;
     left: 12px;
   } */
-
+.caption{
+    text-align: center;
+}
 .jumbotron{
     /* Postmedia Navy Blue  */
     background: linear-gradient(75deg,  rgba(1, 38, 57,0.9), rgba(255, 255, 255,0.25));
@@ -47,8 +49,16 @@ html, body{
 
     -webkit-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
     -moz-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
-    box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
-    
+    box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);    
+}
+
+dd{
+    text-indent: 50px;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+dt{
+    font-size: 1.5em;
 }
 
 .first-paragraph {
@@ -62,9 +72,13 @@ blockquote{
     border-right: 5px solid #002639;
 }
 
+
 @media screen and (min-width: 768px) {
     .headings{
         font-size: 46px;
+    }
+    .lead {
+        font-size: 18px !important;
     }
     .jumbotron {
         padding-top: 85px !important;
