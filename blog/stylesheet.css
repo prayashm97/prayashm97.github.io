@@ -1,6 +1,6 @@
 html, body{
     background-color: rgba(244, 208, 62,0.1) !important;
-    
+
 }
 
 .container{
@@ -13,14 +13,6 @@ html, body{
     font-weight: 600;
 }
 
-/* .headings:after {
-    content: "";
-    width: 76px;
-    border-top: 10px solid rgba(0, 85, 128,0.9);
-    position: absolute;
-    bottom: -7px;
-    left: 12px;
-  } */
 .caption{
     text-align: center;
 }
@@ -49,7 +41,7 @@ html, body{
 
     -webkit-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
     -moz-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
-    box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);    
+    box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
 }
 
 dd{
@@ -113,4 +105,3 @@ blockquote{
         margin-top: -10px;
     }
 }
-
