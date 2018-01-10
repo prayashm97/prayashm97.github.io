@@ -28,6 +28,7 @@ html, body{
 .footer{
     border-width: 8px 0 0 0;
     margin-bottom: 0 !important;
+    margin-top: 30px;
 }
 .header-text{
     color:rgba(255, 255, 255,0.8) !important;
@@ -62,7 +63,30 @@ html, body{
     padding-left: 10px;
 }
 
+.icons{
+    color: #f4d03e;
+    color: rgba(244,208,62,0.8)
+    /* margin-right: 10px; */
+}
+i:hover{
+    color: rgba(244,208,62,1);
+    cursor: pointer;
 
+}
+.icon-first {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.footer-main-text{
+    color:rgba(255, 255, 255,0.8) !important;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
 dd{
     text-indent: 50px;
     font-size: 1.2em;
@@ -76,9 +100,7 @@ dt{
     font-size: 1.2em;
 
 }
-.first-paragraph {
-    /* text-indent: 50px; */
-}
+
 .copyright{
     color:rgba(255, 255, 255,0.8) !important;
     font-family: 'Lato', sans-serif;
@@ -95,9 +117,8 @@ blockquote{
     border-right: 5px solid #002639;
 }
 
-
 @media screen and (min-width: 768px) {
-    .headings{
+    .headings,{
         font-size: 46px;
     }
     .lead {
@@ -107,9 +128,14 @@ blockquote{
         padding-top: 85px !important;
         padding-bottom: 85px !important;
     }
-    .header-text{
+    /* .header-text{
         margin-left: 5rem;
-    }
+    } */
+    /* .footer-icons{
+        margin-left: 4rem;
+        padding: 1em;
+
+    } */
     .logo{
         width: 250px;
         height: 250px;
@@ -131,9 +157,12 @@ blockquote{
         padding-top: 48px !important;
         padding-bottom: 48px !important;
     }
-    .header-text{
+    /* .header-text{
         margin-left: 2rem;
-    }
+    } */
+    /* .footer-icons{
+        margin-left: 7rem;
+    } */
     .logo{
         width:120px;
         height:120px;
