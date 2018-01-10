@@ -25,7 +25,10 @@ html, body{
     border-width: 0 0 8px 0;
     color: #f4d03e;
 }
-
+.footer{
+    border-width: 8px 0 0 0;
+    margin-bottom: 0 !important;
+}
 .header-text{
     color:rgba(255, 255, 255,0.8) !important;
     font-family: 'Lato', sans-serif;
@@ -44,19 +47,47 @@ html, body{
     box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
 }
 
+.office {
+    border:2px solid #f4d03e;
+    /* border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%; */
+    -webkit-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
+    -moz-box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
+    box-shadow: 11px -8px 6px -1px rgba(0,0,0,0.32);
+}
+
+.office-div{
+    float: right;
+    padding-left: 10px;
+}
+
+
 dd{
     text-indent: 50px;
     font-size: 1.2em;
     padding-bottom: 10px;
 }
+
 dt{
     font-size: 1.5em;
 }
+.list-items{
+    font-size: 1.2em;
 
-.first-paragraph {
-    text-indent: 50px;
 }
+.first-paragraph {
+    /* text-indent: 50px; */
+}
+.copyright{
+    color:rgba(255, 255, 255,0.8) !important;
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    padding-right: 10px;
+    width: 100%;
+    background-image: linear-gradient(-75deg, #005580 0%, #002639 100%);
 
+}
 blockquote{
     text-align: right;
     float:right;
@@ -85,6 +116,11 @@ blockquote{
         margin-top: -40px;
         /* margin-right: 10em; */
     }
+    .office{
+        width: 300px;
+        
+        /* margin-right: 10em; */
+    }
     .media-video {
         width: 75% !important;
     }
@@ -103,5 +139,10 @@ blockquote{
         height:120px;
         /* margin-right: 2em; */
         margin-top: -10px;
+    }
+    .office{
+        width: 200px;
+        height: 25%;
+        /* margin-right: 10em; */
     }
 }
